@@ -11,6 +11,9 @@
 		8E91DD372B8F5BE50085DF16 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E91DD362B8F5BE50085DF16 /* ContentView.swift */; };
 		8E91DD392B8F5BEA0085DF16 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E91DD382B8F5BEA0085DF16 /* Assets.xcassets */; };
 		8E91DD3C2B8F5BEA0085DF16 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E91DD3B2B8F5BEA0085DF16 /* Preview Assets.xcassets */; };
+		8E91DD432B8F5CD50085DF16 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E91DD422B8F5CD50085DF16 /* LocationManager.swift */; };
+		8E91DD452B8F5D010085DF16 /* WeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E91DD442B8F5D010085DF16 /* WeatherView.swift */; };
+		8E91DD472B8F63650085DF16 /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E91DD462B8F63650085DF16 /* WeatherService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,9 @@
 		8E91DD362B8F5BE50085DF16 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8E91DD382B8F5BEA0085DF16 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8E91DD3B2B8F5BEA0085DF16 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8E91DD422B8F5CD50085DF16 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		8E91DD442B8F5D010085DF16 /* WeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherView.swift; sourceTree = "<group>"; };
+		8E91DD462B8F63650085DF16 /* WeatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,8 +59,11 @@
 			children = (
 				8E91DD342B8F5BE50085DF16 /* weather_LocationApi_TestApp.swift */,
 				8E91DD362B8F5BE50085DF16 /* ContentView.swift */,
+				8E91DD422B8F5CD50085DF16 /* LocationManager.swift */,
 				8E91DD382B8F5BEA0085DF16 /* Assets.xcassets */,
 				8E91DD3A2B8F5BEA0085DF16 /* Preview Content */,
+				8E91DD442B8F5D010085DF16 /* WeatherView.swift */,
+				8E91DD462B8F63650085DF16 /* WeatherService.swift */,
 			);
 			path = weather_LocationApi_Test;
 			sourceTree = "<group>";
@@ -137,8 +146,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E91DD472B8F63650085DF16 /* WeatherService.swift in Sources */,
 				8E91DD372B8F5BE50085DF16 /* ContentView.swift in Sources */,
 				8E91DD352B8F5BE50085DF16 /* weather_LocationApi_TestApp.swift in Sources */,
+				8E91DD432B8F5CD50085DF16 /* LocationManager.swift in Sources */,
+				8E91DD452B8F5D010085DF16 /* WeatherView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +287,8 @@
 				DEVELOPMENT_TEAM = 9GGZWXBXQ6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "사용자의 위치정보를 항상 가져옵니다";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "사용자의 위치를 가져옵니다.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -304,6 +318,8 @@
 				DEVELOPMENT_TEAM = 9GGZWXBXQ6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "사용자의 위치정보를 항상 가져옵니다";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "사용자의 위치를 가져옵니다.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
